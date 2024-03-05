@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <cstdint>
 #include <algorithm>
+#include <map>
 #include "bst.h"
 
 struct KeyError
@@ -37,7 +38,7 @@ public:
     virtual AVLNode<Key, Value> *getLeft() const override;
     virtual AVLNode<Key, Value> *getRight() const override;
 
-private:
+public:
     AVLNode<Key, Value>* rotateLeft();
     AVLNode<Key, Value>* rotateRight();
 
@@ -185,6 +186,7 @@ protected:
     // Add helper functions here
     static AVLNode<Key, Value> *insertHelper(AVLNode<Key, Value> *node, const std::pair<const Key, Value> &new_item);
     AVLNode<Key, Value> * removeHelper(AVLNode<Key, Value> *node, const Key &key);
+    void rebalance(AVLNode<Key, Value> *n);
 };
 
 template <class Key, class Value>
@@ -306,7 +308,14 @@ AVLNode<Key, Value> *AVLTree<Key, Value>::removeHelper(AVLNode<Key, Value> *node
                 node = NULL;
             } 
             else {
-                temp->setParent(node->getParent());
+                if(node->getParent() != NULL)
+                {
+                    if(node->getParent()->getLeft() == node)
+                        node->getParent()->setLeft(temp);
+                    else
+                        node->getParent()->setRight(temp);
+                    temp->setParent(node->getParent());
+                }
                 node = temp;
             }
         } 
@@ -318,6 +327,7 @@ AVLNode<Key, Value> *AVLTree<Key, Value>::removeHelper(AVLNode<Key, Value> *node
             temp->setLeft(left);
             if(left != NULL)
                 left->setParent(temp);
+            
             node = temp;
         } 
     } 
@@ -366,6 +376,58 @@ AVLNode<Key, Value> *AVLTree<Key, Value>::removeHelper(AVLNode<Key, Value> *node
     return node; 
 }
 
+template<class Key, class Value>
+AVLNode<Key, Value>* print_balances_rec(AVLNode<Key, Value> *node, std::map<AVLNode<Key, Value>*, int> &hh)
+{
+    if(node == NULL)
+        return NULL;
+    if(node->getLeft() == NULL && node->getRight() == NULL) {
+        hh[node] = 1;
+        return node;
+    }
+    node->setLeft(print_balances_rec(node->getLeft(), hh));
+    node->setRight(print_balances_rec(node->getRight(), hh));
+    if(node->getLeft() != NULL)
+        node->getLeft()->setParent(node);
+    if(node->getRight() != NULL)
+        node->getRight()->setParent(node);
+    hh[node] = 1 + std::max(hh[node->getLeft()], hh[node->getRight()]);
+    int balance = hh[node->getLeft()] - hh[node->getRight()];
+
+    if (balance > 1 && node->getLeft()->getBalance() >= 0) 
+        return node->rotateRight(); 
+ 
+    // Left Right Case 
+    if (balance > 1 && node->getLeft()->getBalance() < 0) 
+    { 
+        AVLNode<Key, Value>* new_left = node->getLeft()->rotateLeft();
+        node->setLeft(new_left);
+        new_left->setParent(node);
+        return node->rotateRight(); 
+    } 
+ 
+    // Right Right Case 
+    if (balance < -1 && node->getRight()->getBalance() <= 0) 
+        return node->rotateLeft();
+ 
+    // Right Left Case 
+    if (balance < -1 && node->getRight()->getBalance() > 0) 
+    { 
+        AVLNode<Key, Value>* new_right = node->getRight()->rotateRight();
+        node->setRight(new_right);
+        new_right->setParent(node);
+        return node->rotateLeft(); 
+    } 
+    return node;
+}
+
+template<class Key, class Value>
+AVLNode<Key, Value> * print_balances(AVLNode<Key, Value> * node)
+{
+    std::map<AVLNode<Key, Value>*, int> hh;
+    return print_balances_rec<Key, Value>(node, hh);
+}
+
 /*
  * Recall: The writeup specifies that if a node has 2 children you
  * should swap with the predecessor and then remove.
@@ -373,8 +435,8 @@ AVLNode<Key, Value> *AVLTree<Key, Value>::removeHelper(AVLNode<Key, Value> *node
 template <class Key, class Value>
 void AVLTree<Key, Value>::remove(const Key &key)
 {
-    static int cnt = 0;
     this->root_ = removeHelper(static_cast<AVLNode<Key, Value> *>(this->root_), key);
+    this->root_ = print_balances<Key, Value>(static_cast<AVLNode<Key, Value> *>(this->root_));
 }
 
 template <class Key, class Value>
