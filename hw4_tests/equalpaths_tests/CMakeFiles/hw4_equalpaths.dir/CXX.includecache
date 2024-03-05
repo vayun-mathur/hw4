@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/codio/workspace/hw4/equal-paths.cpp
+algorithm
+-
+equal-paths.h
+/home/codio/workspace/hw4/equal-paths.h
+
+/home/codio/workspace/hw4/equal-paths.h
+cstdlib
+-
+

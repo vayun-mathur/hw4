@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hw4_equalpaths.dir/home/vayunmathur/Documents/code/c++/class/hw4/equal-paths.cpp.o"
-  "CMakeFiles/hw4_equalpaths.dir/home/vayunmathur/Documents/code/c++/class/hw4/equal-paths.cpp.o.d"
-  "libhw4_equalpaths.a"
+  "CMakeFiles/hw4_equalpaths.dir/home/codio/workspace/hw4/equal-paths.cpp.o"
   "libhw4_equalpaths.pdb"
+  "libhw4_equalpaths.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -588,7 +588,7 @@ void BinarySearchTree<Key, Value>::clearRecursive(Node<Key, Value>* current)
     current->setLeft(NULL);
     clearRecursive(current->getRight());
     current->setRight(NULL);
-    //delete current;
+    delete current;
 }
 
 
