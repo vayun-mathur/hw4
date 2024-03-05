@@ -1,0 +1,67 @@
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_caa6e/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_caa6e.dir/build.make CMakeFiles/cmTC_caa6e.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_caa6e.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS___INT64  -Wall  -o CMakeFiles/cmTC_caa6e.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:24:1: error: ‘__int64’ does not name a type
+   24 | __int64 f(__int64 n)
+      | ^~~~~~~
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:30:3: error: ‘__int64’ was not declared in this scope
+   30 |   __int64 n = 0;
+      |   ^~~~~~~
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:31:29: error: ‘n’ was not declared in this scope
+   31 |   return static_cast<int>(f(n));
+      |                             ^
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:31:27: error: ‘f’ was not declared in this scope
+   31 |   return static_cast<int>(f(n));
+      |                           ^
+gmake[1]: *** [CMakeFiles/cmTC_caa6e.dir/build.make:78: CMakeFiles/cmTC_caa6e.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_caa6e/fast] Error 2
+
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fd37f/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_fd37f.dir/build.make CMakeFiles/cmTC_fd37f.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd37f.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -Wall  -o CMakeFiles/cmTC_fd37f.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:196:13: error: ‘environ’ was not declared in this scope; did you mean ‘union’?
+  196 |   char* e = environ[0];
+      |             ^~~~~~~
+      |             union
+gmake[1]: *** [CMakeFiles/cmTC_fd37f.dir/build.make:78: CMakeFiles/cmTC_fd37f.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fd37f/fast] Error 2
+
+
+
+Checking whether CXX compiler struct stat has st_mtimespec member failed to compile with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_54e1d/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_54e1d.dir/build.make CMakeFiles/cmTC_54e1d.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_54e1d.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC  -Wall  -o CMakeFiles/cmTC_54e1d.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:57:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   57 |   (void)stat1.st_mtimespec.tv_sec;
+      |               ^~~~~~~~~~~~
+/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:58:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   58 |   (void)stat1.st_mtimespec.tv_nsec;
+      |               ^~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_54e1d.dir/build.make:78: CMakeFiles/cmTC_54e1d.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_54e1d/fast] Error 2
+
+
+

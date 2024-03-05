@@ -1,0 +1,1034 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Linux - 6.7.6-200.fc39.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/3.27.7/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/3.27.7/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_756a3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_756a3.dir/build.make CMakeFiles/cmTC_756a3.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC'
+        Building C object CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_756a3.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/13/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_756a3.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccUJZMxJ.s
+        GNU C17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)
+        	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6), GMP version 6.2.1, MPFR version 4.2.0-p12, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/13/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0033b406d15a5cb8f51bc16b0ae1679c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_756a3.dir/'
+         as -v --64 -o CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o /tmp/ccUJZMxJ.s
+        GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-14.fc39
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_756a3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_756a3.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o -o cmTC_756a3 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_756a3' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_756a3.'
+         /usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc75yrR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_756a3 /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/13 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_756a3' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_756a3.'
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/13/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/13/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_756a3/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_756a3.dir/build.make CMakeFiles/cmTC_756a3.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-HLEOXC']
+        ignore line: [Building C object CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_756a3.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/13/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_756a3.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccUJZMxJ.s]
+        ignore line: [GNU C17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6)  GMP version 6.2.1  MPFR version 4.2.0-p12  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0033b406d15a5cb8f51bc16b0ae1679c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_756a3.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o /tmp/ccUJZMxJ.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-14.fc39]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_756a3]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_756a3.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o -o cmTC_756a3 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_756a3' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_756a3.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc75yrR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_756a3 /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/13 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccc75yrR.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_756a3] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/13] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/13]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/13/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../..]
+          arg [CMakeFiles/cmTC_756a3.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/13] ==> [/usr/lib/gcc/x86_64-redhat-linux/13]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/13;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8bc5d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8bc5d.dir/build.make CMakeFiles/cmTC_8bc5d.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k'
+        Building CXX object CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8bc5d.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8bc5d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccxpzRyy.s
+        GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)
+        	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6), GMP version 6.2.1, MPFR version 4.2.0-p12, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13
+         /usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward
+         /usr/lib/gcc/x86_64-redhat-linux/13/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 57c1ed761dab3730ee98ed90e993f026
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8bc5d.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxpzRyy.s
+        GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-14.fc39
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8bc5d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bc5d.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8bc5d 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8bc5d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8bc5d.'
+         /usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMSzVII.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8bc5d /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/13 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8bc5d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8bc5d.'
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux] ==> [/usr/include/c++/13/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/13/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/c++/13/x86_64-redhat-linux;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-redhat-linux/13/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8bc5d/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8bc5d.dir/build.make CMakeFiles/cmTC_8bc5d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-Kjbw1k']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8bc5d.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8bc5d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccxpzRyy.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6)  GMP version 6.2.1  MPFR version 4.2.0-p12  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/13/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 57c1ed761dab3730ee98ed90e993f026]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8bc5d.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxpzRyy.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-redhat-linux) using BFD version version 2.40-14.fc39]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8bc5d]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bc5d.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8bc5d ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none --without-cuda-driver --enable-offload-defaulted --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/13/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/13/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8bc5d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8bc5d.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMSzVII.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8bc5d /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/13 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/13/../../.. CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/13/crtend.o /usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccMSzVII.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8bc5d] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/13] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/13]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/13/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../..]
+          arg [CMakeFiles/cmTC_8bc5d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/13] ==> [/usr/lib/gcc/x86_64-redhat-linux/13]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/13/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/13/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/13;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake/Modules/FindGTest.cmake:283 (find_package)"
+      - "CMakeLists.txt:41 (find_package)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-4fJLZk"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-4fJLZk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-4fJLZk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d2c36/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d2c36.dir/build.make CMakeFiles/cmTC_d2c36.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-4fJLZk'
+        Building C object CMakeFiles/cmTC_d2c36.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d2c36.dir/src.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-4fJLZk/src.c
+        Linking C executable cmTC_d2c36
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2c36.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d2c36.dir/src.c.o -o cmTC_d2c36 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/CMakeFiles/CMakeScratch/TryCompile-4fJLZk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:353 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_CSTDIO_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8a62/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8a62.dir/build.make CMakeFiles/cmTC_b8a62.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_b8a62.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_CSTDIO  -Wall  -o CMakeFiles/cmTC_b8a62.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_b8a62
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8a62.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_b8a62.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_b8a62 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:57 (TRY_RUN)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:156 (KWSYS_PLATFORM_TEST_RUN)"
+      - "testing_utils/kwsys/CMakeLists.txt:363 (KWSYS_PLATFORM_CXX_TEST_RUN)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_LFS_WORKS_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b284/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9b284.dir/build.make CMakeFiles/cmTC_9b284.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_9b284.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DKWSYS_CXX_HAS_CSTDIO=1 -DTEST_KWSYS_LFS_WORKS  -Wall  -o CMakeFiles/cmTC_9b284.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_9b284
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b284.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_9b284.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_9b284 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "KWSYS_LFS_WORKS"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:381 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_LONG_LONG_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c0946/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c0946.dir/build.make CMakeFiles/cmTC_c0946.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_c0946.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_LONG_LONG  -Wall  -o CMakeFiles/cmTC_c0946.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_c0946
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0946.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_c0946.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_c0946 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:383 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS___INT64_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_caa6e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_caa6e.dir/build.make CMakeFiles/cmTC_caa6e.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_caa6e.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS___INT64  -Wall  -o CMakeFiles/cmTC_caa6e.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:24:1: error: ‘__int64’ does not name a type
+           24 | __int64 f(__int64 n)
+              | ^~~~~~~
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:30:3: error: ‘__int64’ was not declared in this scope
+           30 |   __int64 n = 0;
+              |   ^~~~~~~
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:31:29: error: ‘n’ was not declared in this scope
+           31 |   return static_cast<int>(f(n));
+              |                             ^
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:31:27: error: ‘f’ was not declared in this scope
+           31 |   return static_cast<int>(f(n));
+              |                           ^
+        gmake[1]: *** [CMakeFiles/cmTC_caa6e.dir/build.make:78: CMakeFiles/cmTC_caa6e.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_caa6e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:415 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_STL_HAS_WSTRING_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_095b4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_095b4.dir/build.make CMakeFiles/cmTC_095b4.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_095b4.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_STL_HAS_WSTRING  -Wall  -o CMakeFiles/cmTC_095b4.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_095b4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_095b4.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_095b4.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_095b4 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:130 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:458 (KWSYS_PLATFORM_C_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_C_HAS_PTRDIFF_T_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ef42c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ef42c.dir/build.make CMakeFiles/cmTC_ef42c.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_ef42c.dir/kwsysPlatformTestsC.c.o
+        /usr/bin/cc -DTEST_KWSYS_C_HAS_PTRDIFF_T   -o CMakeFiles/cmTC_ef42c.dir/kwsysPlatformTestsC.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+        Linking C executable cmTC_ef42c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef42c.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_ef42c.dir/kwsysPlatformTestsC.c.o -o cmTC_ef42c 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:130 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:460 (KWSYS_PLATFORM_C_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_C_HAS_SSIZE_T_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d9d8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d9d8.dir/build.make CMakeFiles/cmTC_7d9d8.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_7d9d8.dir/kwsysPlatformTestsC.c.o
+        /usr/bin/cc -DTEST_KWSYS_C_HAS_SSIZE_T   -o CMakeFiles/cmTC_7d9d8.dir/kwsysPlatformTestsC.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+        Linking C executable cmTC_7d9d8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d9d8.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_7d9d8.dir/kwsysPlatformTestsC.c.o -o cmTC_7d9d8 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:130 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:463 (KWSYS_PLATFORM_C_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5d10/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b5d10.dir/build.make CMakeFiles/cmTC_b5d10.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_b5d10.dir/kwsysPlatformTestsC.c.o
+        /usr/bin/cc -DTEST_KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC   -o CMakeFiles/cmTC_b5d10.dir/kwsysPlatformTestsC.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+        Linking C executable cmTC_b5d10
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5d10.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b5d10.dir/kwsysPlatformTestsC.c.o -o cmTC_b5d10 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:488 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_SETENV_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4814/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e4814.dir/build.make CMakeFiles/cmTC_e4814.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_e4814.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_SETENV  -Wall  -o CMakeFiles/cmTC_e4814.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_e4814
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4814.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_e4814.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_e4814 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:490 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_UNSETENV_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09dd8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_09dd8.dir/build.make CMakeFiles/cmTC_09dd8.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_09dd8.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UNSETENV  -Wall  -o CMakeFiles/cmTC_09dd8.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_09dd8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09dd8.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_09dd8.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_09dd8 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:492 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fd37f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fd37f.dir/build.make CMakeFiles/cmTC_fd37f.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_fd37f.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -Wall  -o CMakeFiles/cmTC_fd37f.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:196:13: error: ‘environ’ was not declared in this scope; did you mean ‘union’?
+          196 |   char* e = environ[0];
+              |             ^~~~~~~
+              |             union
+        gmake[1]: *** [CMakeFiles/cmTC_fd37f.dir/build.make:78: CMakeFiles/cmTC_fd37f.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_fd37f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:494 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_UTIMES_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c8d74/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c8d74.dir/build.make CMakeFiles/cmTC_c8d74.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_c8d74.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UTIMES  -Wall  -o CMakeFiles/cmTC_c8d74.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_c8d74
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8d74.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_c8d74.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_c8d74 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:496 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_UTIMENSAT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c404/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0c404.dir/build.make CMakeFiles/cmTC_0c404.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_0c404.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UTIMENSAT  -Wall  -o CMakeFiles/cmTC_0c404.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_0c404
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c404.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_0c404.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_0c404 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:498 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_STAT_HAS_ST_MTIM_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa07a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa07a.dir/build.make CMakeFiles/cmTC_fa07a.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_fa07a.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIM  -Wall  -o CMakeFiles/cmTC_fa07a.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_fa07a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa07a.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_fa07a.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_fa07a 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:500 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_STAT_HAS_ST_MTIMESPEC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_54e1d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_54e1d.dir/build.make CMakeFiles/cmTC_54e1d.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_54e1d.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC  -Wall  -o CMakeFiles/cmTC_54e1d.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:57:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+           57 |   (void)stat1.st_mtimespec.tv_sec;
+              |               ^~~~~~~~~~~~
+        /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:58:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+           58 |   (void)stat1.st_mtimespec.tv_nsec;
+              |               ^~~~~~~~~~~~
+        gmake[1]: *** [CMakeFiles/cmTC_54e1d.dir/build.make:78: CMakeFiles/cmTC_54e1d.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_54e1d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:707 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/test_cmake_lib"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c175d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c175d.dir/build.make CMakeFiles/cmTC_c175d.dir/build
+        gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_c175d.dir/kwsysPlatformTestsCXX.cxx.o
+        /usr/bin/c++ -DTEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H  -Wall  -o CMakeFiles/cmTC_c175d.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_c175d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c175d.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_c175d.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_c175d 
+        gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+...

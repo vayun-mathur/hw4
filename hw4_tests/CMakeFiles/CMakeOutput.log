@@ -1,0 +1,195 @@
+Checking whether header cstdio is available compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8a62/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_b8a62.dir/build.make CMakeFiles/cmTC_b8a62.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b8a62.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_CSTDIO  -Wall  -o CMakeFiles/cmTC_b8a62.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_b8a62
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8a62.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_b8a62.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_b8a62 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking for Large File Support compiled and ran with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b284/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_9b284.dir/build.make CMakeFiles/cmTC_9b284.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9b284.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DKWSYS_CXX_HAS_CSTDIO=1 -DTEST_KWSYS_LFS_WORKS  -Wall  -o CMakeFiles/cmTC_9b284.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_9b284
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b284.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_9b284.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_9b284 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether C++ compiler has 'long long' compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c0946/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_c0946.dir/build.make CMakeFiles/cmTC_c0946.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c0946.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_LONG_LONG  -Wall  -o CMakeFiles/cmTC_c0946.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_c0946
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0946.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_c0946.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_c0946 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether wstring is available compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_095b4/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_095b4.dir/build.make CMakeFiles/cmTC_095b4.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_095b4.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_STL_HAS_WSTRING  -Wall  -o CMakeFiles/cmTC_095b4.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_095b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_095b4.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_095b4.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_095b4 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether C compiler has ptrdiff_t in stddef.h compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ef42c/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_ef42c.dir/build.make CMakeFiles/cmTC_ef42c.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef42c.dir/kwsysPlatformTestsC.c.o
+/usr/bin/cc -DTEST_KWSYS_C_HAS_PTRDIFF_T   -o CMakeFiles/cmTC_ef42c.dir/kwsysPlatformTestsC.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+Linking C executable cmTC_ef42c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef42c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_ef42c.dir/kwsysPlatformTestsC.c.o -o cmTC_ef42c 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether C compiler has ssize_t in unistd.h compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d9d8/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_7d9d8.dir/build.make CMakeFiles/cmTC_7d9d8.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d9d8.dir/kwsysPlatformTestsC.c.o
+/usr/bin/cc -DTEST_KWSYS_C_HAS_SSIZE_T   -o CMakeFiles/cmTC_7d9d8.dir/kwsysPlatformTestsC.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+Linking C executable cmTC_7d9d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d9d8.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_7d9d8.dir/kwsysPlatformTestsC.c.o -o cmTC_7d9d8 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether C compiler has clock_gettime compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5d10/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_b5d10.dir/build.make CMakeFiles/cmTC_b5d10.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5d10.dir/kwsysPlatformTestsC.c.o
+/usr/bin/cc -DTEST_KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC   -o CMakeFiles/cmTC_b5d10.dir/kwsysPlatformTestsC.c.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+Linking C executable cmTC_b5d10
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5d10.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b5d10.dir/kwsysPlatformTestsC.c.o -o cmTC_b5d10 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether CXX compiler has setenv compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4814/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_e4814.dir/build.make CMakeFiles/cmTC_e4814.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4814.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_SETENV  -Wall  -o CMakeFiles/cmTC_e4814.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_e4814
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4814.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_e4814.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_e4814 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether CXX compiler has unsetenv compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09dd8/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_09dd8.dir/build.make CMakeFiles/cmTC_09dd8.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_09dd8.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UNSETENV  -Wall  -o CMakeFiles/cmTC_09dd8.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_09dd8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09dd8.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_09dd8.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_09dd8 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether CXX compiler has utimes compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c8d74/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_c8d74.dir/build.make CMakeFiles/cmTC_c8d74.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8d74.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UTIMES  -Wall  -o CMakeFiles/cmTC_c8d74.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_c8d74
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8d74.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_c8d74.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_c8d74 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether CXX compiler has utimensat compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c404/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_0c404.dir/build.make CMakeFiles/cmTC_0c404.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0c404.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UTIMENSAT  -Wall  -o CMakeFiles/cmTC_0c404.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_0c404
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c404.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_0c404.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_0c404 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether CXX compiler struct stat has st_mtim member compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa07a/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_fa07a.dir/build.make CMakeFiles/cmTC_fa07a.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fa07a.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIM  -Wall  -o CMakeFiles/cmTC_fa07a.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_fa07a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa07a.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_fa07a.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_fa07a 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether <ext/stdio_filebuf.h> is available compiled with the following output:
+Change Dir: '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c175d/fast
+/usr/bin/gmake  -f CMakeFiles/cmTC_c175d.dir/build.make CMakeFiles/cmTC_c175d.dir/build
+gmake[1]: Entering directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c175d.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H  -Wall  -o CMakeFiles/cmTC_c175d.dir/kwsysPlatformTestsCXX.cxx.o -c /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+Linking CXX executable cmTC_c175d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c175d.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  -rdynamic CMakeFiles/cmTC_c175d.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_c175d 
+gmake[1]: Leaving directory '/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+
+
+
