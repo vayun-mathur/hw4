@@ -361,7 +361,9 @@ AVLNode<Key, Value> *Delete(AVLTree<Key, Value> *tree, AVLNode<Key, Value> *root
 
                 root->setLeft(Balance(
                     root->getLeft()));
-                return root->getLeft();
+                AVLNode<Key, Value> *tmp = root->getLeft();
+                delete root;
+                return tmp;
             }
 
             else if (root->getLeft() == NULL && root->getRight() != NULL)
@@ -378,7 +380,9 @@ AVLNode<Key, Value> *Delete(AVLTree<Key, Value> *tree, AVLNode<Key, Value> *root
                 root->getRight()->setParent(root->getParent());
 
                 root->setRight(Balance(root->getRight()));
-                return root->getRight();
+                AVLNode<Key, Value> *tmp = root->getRight();
+                delete root;
+                return tmp;
             }
 
             else if (root->getLeft() == NULL && root->getRight() == NULL)
@@ -392,6 +396,7 @@ AVLNode<Key, Value> *Delete(AVLTree<Key, Value> *tree, AVLNode<Key, Value> *root
                 }
                 if (root->getParent() != NULL)
                     Updateheight(root->getParent());
+                delete root;
                 root = NULL;
                 return NULL;
             }
@@ -409,6 +414,7 @@ AVLNode<Key, Value> *Delete(AVLTree<Key, Value> *tree, AVLNode<Key, Value> *root
                 root->setLeft(Delete(tree, root->getLeft(), tmpnode->getKey()));
                 AVLNode<Key, Value> *tmp = new AVLNode<Key, Value>(val, v, NULL);
                 tree->nodeSwap(root, tmp);
+                delete root;
                 root = tmp;
                 root = Balance(root);
             }
