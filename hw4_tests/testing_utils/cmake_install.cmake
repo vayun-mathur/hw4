@@ -1,4 +1,4 @@
-# Install script for directory: /home/codio/workspace/hw4/hw4_tests/testing_utils
+# Install script for directory: /home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -37,9 +37,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/codio/workspace/hw4/hw4_tests/testing_utils/kwsys/cmake_install.cmake")
+  include("/home/vayunmathur/Documents/code/c++/class/hw4/hw4_tests/testing_utils/kwsys/cmake_install.cmake")
 
 endif()
 
